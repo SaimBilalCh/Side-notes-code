@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Loader</title>
+        <style>
+            .wow{
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+            }
+            @keyframes loading1{
+                0%{
+                    top:0;
+                    left: 0;
+                }
+                25%{
+                    top:0; 
+                    left:50px;
+                }
+                50%{
+                    top:50px;
+                    left: 50px;
+                }
+                75%{
+                    top: 50px;
+                    left: 0;
+                }
+                100%{
+                    top: 0;
+                    left:0;
+                }
+            }
+            @keyframes loading2{
+                0%{
+                    top:0;
+                    left: 50px;
+                }
+                25%{
+                    top: 0;
+                    left: 0;
+                }
+                50%{
+                    top: -50px;
+                    left: 0;
+                }
+                75%{
+                    top: -50px;
+                    left: 50px;
+                }
+                100%{
+                    top:0;
+                    left: 50px;
+                }
+            }
+            .loader1{
+                width: 50px;
+                height: 50px;
+                position: relative;
+                background-color: aqua;
+                animation: loading1 5s linear normal infinite;
+                box-shadow: 0px 0px 5px rgb(66, 66, 66);
+            }
+            .loader2{
+                width: 50px;
+                height: 50px;
+                position: relative;
+                top: 0;
+                left: 50px;
+                background-color: aqua;
+                animation: loading2 5s linear normal infinite;
+                box-shadow: 0px 0px 5px rgb(66, 66, 66);
+            }
+            .para{
+                width: 100px;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="wow">
+            <div class="loader1">
+
+            </div>
+            <div class="loader2">
+    
+            </div>
+            <div class="para">
+                <p>Loading ...</p>
+            </div>
+        </div>
+    </body>
+</html>

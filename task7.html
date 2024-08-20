@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gmail iOS</title>
+        <style>
+            .container{
+                border:none;
+                box-shadow: 0px 0px 5px rgb(0,0,0);
+                padding-bottom: 20px;
+                width: 340px;
+                height: 200px;
+                display: grid;
+                border-radius: 5px;
+            }
+            .heading p{
+                color:gray;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 12px;
+                letter-spacing: 0.2px;
+                padding-top:1px;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 8px;
+            }
+            .one, .two, .three{
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            .cat{
+                width: 40px;
+                height: 40px;
+                box-shadow: 0px 0px 5px rgb(0,0,0);
+                border-radius: 20px;
+                margin-right: 7px;
+            }
+            .header-of-mail{
+                width: 270px;
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+            }
+            .name p{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 3px;
+            }
+            .time p{
+                margin:0;
+                color: gray;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+            .bold p{
+                margin:0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13.5px;
+                font-weight: 600;
+                margin-bottom: 4px;
+            }
+            .paragraph p{
+                margin:0;
+                color:gray;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+
+            .cont{
+                display: flex;
+                border: none;
+                padding: 8px;
+                margin-top: 40px;
+                width:380px;
+                box-shadow: 0px 0px 10px black;
+                border-radius: 20px;
+            }
+            .left-sec img{
+                margin-right: 10px;
+                width: 40px;
+                box-shadow: 0px 0px 5px rgb(0,0,0);
+                border-radius: 20px;
+                height: 40px;
+            }
+            .name{
+                display: flex;
+            }
+            .tag p{
+                color:rgb(83, 83, 83);
+                font-weight: 400;
+            }
+            .description p{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            .video{
+                margin-top: 10px;
+                width:320px;
+                display: flex;
+                border: solid;
+                border-width: 1px;
+                border-color: gainsboro;
+                border-radius: 20px;
+                height: 80px;
+            }
+            .picture{
+                width: 120px;
+                height: 80px;
+                border: none;
+                background-color: rgb(206, 206, 206);
+                border-radius: 20px;
+                border-top-right-radius:0;
+                border-bottom-right-radius: 0;
+                margin-right: 10px;
+            }
+            .youtube p{
+                margin: 0;
+                margin-top: 8px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                margin-bottom: 5px;
+                color: gray;
+            }
+            .title p{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <p>ALL INBOXES</p>
+            </div>
+            <div class="one">
+                <div class="image">
+                    <img class="cat" src="other-images/cat.webp" alt="cat">
+                </div>
+                <div class="info">
+                    <div class="header-of-mail">
+                        <div class="name">
+                            <p>Chewy Promotions</p>
+                        </div>
+                        <div class="time">
+                            <p>4:58 PM</p>
+                        </div>  
+                    </div>
+                    <div class="bold">
+                        <p>Biggest sales of the year!</p>
+                    </div>
+                    <div class="paragraph">
+                        <p>Hey there! We're writing to tell you about our.....</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two">
+                <div class="image">
+                    <img class="cat" src="other-images/cat2.avif" alt="cat">
+                </div>
+                <div class="info">
+                    <div class="header-of-mail">
+                        <div class="name">
+                            <p>Best Buy</p>
+                        </div>
+                        <div class="time">
+                            <p>12:32 PM</p>
+                        </div>  
+                    </div>
+                    <div class="bold">
+                        <p>Your Best Buy eReceipt</p>
+                    </div>
+                    <div class="paragraph">
+                        <p>Thank you for shopping at Best Buy, here is....</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="three">
+                <div class="image">
+                    <img class="cat" src="other-images/youtube-logo.webp" alt="cat">
+                </div>
+                <div class="info">
+                    <div class="header-of-mail">
+                        <div class="name">
+                            <p>Youtube</p>
+                        </div>
+                        <div class="time">
+                            <p>4:58 PM</p>
+                        </div>  
+                    </div>
+                    <div class="bold">
+                        <p>Here's what coming soon to Youtube</p>
+                    </div>
+                    <div class="paragraph">
+                        <p>Brand new videos, movies, vlogs and shows.....</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cont">
+            <div class="left-sec">
+                <img src="other-images/cat.webp" alt="cat">
+            </div>
+            <div class="right-sec">
+                <div class="video-info">
+                    <div class="name">
+                        <div class="channel">
+                            <p>supersimple.dev</p>
+                        </div>
+                        <div class="tag">
+                            <p>&nbsp;@SuperSimpleDev</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>What is backend web development? A complete overview. New video is up!</p>
+                    </div>
+                </div> 
+                <div class="video">
+                    <div class="picture">
+                        <p></p>
+                    </div>
+                    <div class="youtube-video">
+                        <div class="youtube">
+                            <p>youtube.com</p>
+                        </div>
+                        <div class="title">
+                            <p>Backend web development - a complete overview (2021)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

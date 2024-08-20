@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Position Practice</title>   
+    </head>
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            position: static;
+            margin-top: 20px;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            position: relative;
+        }
+        .header{
+            background-color: black;
+            color: white;
+            position: fixed; 
+            height: 30px;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        body{
+            height: 3000px;
+            padding-top:20px;
+            padding-left: 80px;
+        }
+        .sidebar{
+            background-color: green;
+            color:white;
+            position: fixed;
+            left:0;
+            bottom:0;
+            top:30px;
+            width:70px;
+        }
+        .absolute{
+            position: absolute;
+            background-color: red;
+            color: white;
+            top:220px;
+            left: 220px;
+        }
+        .absolute1{
+            position: absolute;
+            background-color: red;
+            color: white;
+            right:10px;
+            bottom:10px;
+        }
+        .inside{
+            position: absolute;
+            background-color: red;
+            color: white;
+            top:0;
+            right: 0;
+        }
+    </style>
+    <body>
+        <div class="header">
+            header
+        </div>
+        <div class="sidebar">
+            sidebar
+            <div class="inside">
+                X
+            </div>
+        </div>
+
+        <div class="one">
+            div 1
+            <div class="absolute">
+                absolute
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="absolute1">
+                absolute
+            </div>
+            div 2
+        </div>
+    </body>
+</html>

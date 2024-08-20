@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        #link{
+           color: rgb(0, 133, 133);
+        }
+        #link:hover{
+            color:rgb(202, 41, 41);
+        }
+        #price{
+            color: rgb(0, 118, 0);
+            font-weight: bold;
+        }
+        #del{
+            font-weight: bold;
+        }
+        #cart{
+            background-color: rgb(255, 216, 20);
+                border: none;
+                border-radius: 18px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 25px;
+                padding-right: 25px;
+                /* margin-left: 8px; */
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.2s;
+        }
+        #cart:hover{
+            background-color: rgb(250, 186, 36);
+        }
+        #cart:active{
+            opacity: 0.6;
+        }
+        #buy{
+            background-color: rgb(255, 164, 28);
+                border: none;
+                border-radius: 18px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 25px;
+                padding-right: 25px;
+                /* margin-left: 8px; */
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                cursor: pointer;
+                font-weight: bold;
+                margin-left: 8px;
+                transition: background-color 0.2s;
+        }
+        #buy:hover{
+            background-color: rgb(223, 141, 20);
+        }
+        #buy:active{
+            opacity:0.6;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <a id="link" href="https://www.amazon.com/" target="_blank">Back to Amazon</a>
+        
+        <h2>
+            Nike Black Running Shoes
+        </h2>
+
+        <p id="price">
+            $39- In Stock
+        </p>
+
+        <p id="del">
+            Free delivery tomorrow
+        </p>
+
+        <button id="cart">
+            Add To Cart
+        </button>
+
+        <button id="buy">
+            Buy Now
+        </button>
+    </body>
+</html>

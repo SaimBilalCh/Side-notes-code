@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            h2{
+                color:blue;
+            }
+            #back{
+                vertical-align: top;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-right: 10px;
+                padding-left: 10px;
+                cursor:pointer;
+                transition: background-color 0.5s;
+                border-radius: 5px;
+                border: none;
+            }
+            #back:hover{
+                background-color: black;
+                color:white;
+            }
+            a{
+                margin-left:10px;
+                margin-right: 10px;
+                vertical-align:sub;
+            }
+            a:hover{
+                color:rgb(151, 147, 147);
+            }
+            a:active{
+                color:blue
+            }
+            #next{
+                vertical-align: top;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-right: 10px;
+                padding-left: 10px;
+                cursor:pointer;
+                transition: background-color 0.5s;
+                border-radius: 5px;
+                border: none;
+            }
+            #next:hover{
+                background-color: black;
+                color:white;
+            }
+            #shadow{
+                
+                border: none;
+                padding:8px;
+                color:white;
+                background-color: green;
+                transition: box-shadow 0.15s;
+                cursor:pointer;
+                border-radius: 5px;
+            }
+            #shadow:hover{
+                box-shadow: 5px 8px 10px rgb(145, 144, 144);
+            }
+            #shadow:active{
+                box-shadow: none;
+            }
+            #stretch{
+                padding: 8px;
+                transition: padding 0.3s;
+                color:white;
+                background-color: green;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            #stretch:hover{
+                padding: 15px;
+            }
+            #btn1, #btn2, #btn3{
+                color:white;
+                background-color: green;
+                padding: 8px;
+                margin:5px;
+                border:none;
+                border-radius: 1px;
+                transition: margin-left 0.3s, margin-right 0.3s, padding 0.3s;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            #btn1:hover, #btn2:hover, #btn3:hover{
+                
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="pagination">
+            <h2>Pagination</h2>
+        <button id="back">
+            Back
+        </button>
+        <a id="one" href="#">1</a>
+        <a id="two" href="#">2</a>
+        <a id="three" href="#">3</a>
+        <a id="four" href="#">4</a>
+        <a id="five" href="#">5</a>
+        <button id="next">
+            Next
+        </button>
+        </section>
+
+        <section id="3d-Click">
+            <h2>3d-Click</h2>
+            <button id="shadow">
+                Shadow
+            </button>
+        </section>
+
+        <section id="Stretch">
+            <h2>Stretch</h2>
+            <button id="stretch">
+                Stretch
+            </button>
+        </section>
+
+        <section id="Margin and Padding">
+            <h2>Margin and Padding</h2>
+            <button id="btn1">
+                One
+            </button>
+            <button id="btn2">
+                Two
+            </button>
+            <button id="btn3">
+                Three
+            </button>
+        </section>
+    </body>
+</html>
